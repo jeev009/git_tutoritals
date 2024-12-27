@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+        
+        }
+
+        #content {
+            justify-content: space-between;
+        }
+
+        span {
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;        }
+
+        sup {
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
+        .menu {
+            font-size: 2rem;
+            margin-left:25px ;
+            align-content: center;
+            justify-content: center;
+            align-content: center;
+            color: white;
+           
+           
+        }
+
+        .logo {
+            padding-left: 100px;
+            font-size: 1.7rem;
+            align-content: center;
+            margin-right: 25vw;
+
+           
+            /* border: 2px solid red; */
+        }
+
+        .search {
+           
+            align-content: center;
+            margin-right:190px;
+        }
+
+        input {
+            padding: 5px;
+            width: 25vw;
+            border: 1px solid grey;
+            border-radius: 20px;
+            
+            background-color: black;
+        }
+
+        button {
+           
+            width: 40px;
+            height: 40px;
+            color: #fff;
+            /* filter: invert(100%); */
+            background-color: rgb(24, 24, 24);
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            align-content: center;
+           
+        }
+
+        .createbtn {
+            width: 6vw;
+            height: 5vh;
+            align-content: center;
+            margin-right: 30px;
+            margin-top: 3px;
+           
+        }
+
+        .icons {
+            align-content: center;
+            display: flex;
+            margin-right: 20px;
+            font-size: 1.2rem;
+        }
+
+        .sidenav {
+        position: fixed;
+        height: 100%;
+        width: 80px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 5px;
+      
+}
+
+    .image {
+       filter: invert(100%);
+       margin-left: 20px;
+        width: 40px;
+        height: 40px;
+        margin-top: 30px;
+        
+    }
+
+    .text {
+        color:white;
+        margin: auto;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    
+    .image-section {
+        column-count: 3;
+        column-gap: 2px;
+        margin-left: 75px;
+        
+    }
+
+    .image-box {
+        margin-bottom: 15px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-dark text-white p-2" id="container" >
+        <div class="menu-box d-flex flex-row " id="content">
+        
+       <div class="logo ">
+        <i class="fa-brands fa-youtube" style="color: #ff2600;"><span class="">YouTube<sup>IN</sup></span></i>
+       </div>
+       <div class="search">
+         <form action="">
+            <input type="text" class="" placeholder="Search..">
+            <button type="button" class="searchIcon p-1"><i class="fa-solid fa-magnifying-glass"></i></button>
+             <button type="button" class="mic p-1"><i class="fa-solid fa-microphone"></i></button>    
+        </form>
+       </div>
+           <div class="icons">
+            <button type="button" class="createbtn">+ Create</button>
+            <button type="button" class="bell"><i class="fa-regular fa-bell"></i></button>
+           </div>
+      </div>
+     </div>
+      
+    
+        <div class="sidenav">
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+               </div>
+            <div class="navbar-menu">
+                <img src="home.png" alt="home" class="image"> 
+                <p class="text">Home</p>
+            </div>
+            <div class="navbar">
+                <img src="reel.png" alt="reel" class="image"> 
+            <p class="text">Shorts</p>
+            </div>
+            <div class="navbar">
+                <img src="subscribe.png" alt="subscribe" class="image" id="image"> 
+                <p class="text">Subcribe</p> 
+            </div>
+            <div class="navbar">
+                <img src="user.png" alt="account" class="image"> 
+            <p class="text">User</p> 
+            </div>
+        </div>
+        
+        
+
+    </div>
+
+    <div class="image-section">
+       <div class="image-box">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/DlEIVZE0YC0?si=JJyu3a0NgdJJHhW1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="image-box">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/yE560j3AK3A?si=F7saV4sennyqso44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     </div>
+    <div class="image-box">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/Ow0b1SwZN3I?si=km8GU0lSstzjh19s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="image-box">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/09tCNsSRE3U?si=z2YF7OC6N_L6KRXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+    </div>
+    <div class="image-box">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/QcQpqWhTBCE?si=qp__dWXf3t84K4jl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
+      </div>
+      <div class="image-box">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/vfi-0_wUtdE?si=lM7eNn5wtiww2Bk5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="image-box">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/DlEIVZE0YC0?si=JJyu3a0NgdJJHhW1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="image-box">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/yE560j3AK3A?si=F7saV4sennyqso44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="image-box">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/QcQpqWhTBCE?si=qp__dWXf3t84K4jl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
+
+      </div>
+</body>
+</html>
